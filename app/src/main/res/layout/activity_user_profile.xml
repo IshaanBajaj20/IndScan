@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e2a3a"
+    tools:context=".UserProfile">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1e2a3a"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom5"
+            android:elevation="8dp">
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/reverse" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="IndScan"
+                android:textColor="#2c618c"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="User Profile"
+                android:textColor="#9ab0cb"
+                android:textSize="10sp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:padding="5dp"
+                android:src="@drawable/focu5"
+                app:civ_border_color="#fff"
+                app:civ_border_width="2dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/ll"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/ll2"
+        android:elevation="8dp"
+        android:alpha="0.8"
+        android:background="@drawable/pexels"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll2"
+        android:background="@drawable/custom56"
+        android:layout_marginTop="-22dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:elevation="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/photo"
+            android:elevation="3dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/basic"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/relname"
+            android:layout_below="@id/photo"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom69"
+            android:elevation="3dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Name"
+            android:id="@+id/name"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relname"
+            android:background="@drawable/custom69"
+            android:elevation="3dp"
+            android:id="@+id/relemail"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Email"
+            android:padding="10dp"
+            android:id="@+id/mail"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:layout_margin="10dp"
+            android:id="@+id/reluserid"
+            android:layout_below="@id/relemail"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom69"
+            android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="User-id"
+            android:id="@+id/id"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/reluserid"
+            android:layout_centerHorizontal="true"
+            app:lottie_fileName="verified.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Scandash">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#fff"
+        android:theme="@style/navigationTheme"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/high"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="8dp"
+                    android:elevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/menu_icon"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/bbt2" />
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@id/menu_icon"
+                        android:gravity="center"
+                        android:text="IndScan"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title1"
+                        android:layout_marginLeft="18dp"
+                        android:layout_toRightOf="@id/menu_icon"
+                        android:gravity="center"
+                        android:text="Dashboard"
+                        android:textColor="#fff"
+                        android:textSize="10sp" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/photo"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:padding="5dp"
+                        android:src="@drawable/basic"
+                        app:civ_border_color="#fff"
+                        app:civ_border_width="2dp" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/button123"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom61"
+                        android:elevation="5dp"
+                        android:onClick="openCamera"
+                        android:orientation="vertical"
+                        android:textColor="#fff">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/ss1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Document\nScanner"
+                            android:textColor="#fff"
+                            android:textSize="11sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button124"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom62"
+                        android:elevation="5dp"
+                        android:orientation="vertical"
+                        android:textColor="#fff">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/ss2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="OCR"
+                            android:textColor="#fff"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="(Image to Text)"
+                            android:textColor="#fff"
+                            android:textSize="8sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/button125"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom63"
+                        android:elevation="5dp"
+                        android:orientation="vertical"
+                        android:textColor="#fff">
+
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/ss3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="QR/Bar\nCode"
+                            android:textColor="#fff"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Start a new scan from your camera or imported photos."
+                    android:textColor="#f5f5f5"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f5f5f5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/custom5"
+                        android:elevation="7dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/a123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Your scanned documents"
+                                android:textColor="#000" />
+
+                            <Button
+                                android:id="@+id/b123"
+                                android:layout_width="50dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_toRightOf="@id/a123"
+                                android:background="#ffc736"
+                                android:text="MORE"
+                                android:textColor="#fff" />
+
+
+                        </RelativeLayout>
+
+                        <ListView
+                            android:id="@+id/listView_pdf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:divider="#efefef"
+                            android:dividerHeight="5dp" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/custom5"
+                        android:elevation="7dp">
+
+                        <TextView
+                            android:id="@+id/textheading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Recently Scanned Images"
+                            android:textColor="#000" />
+
+                        <ImageView
+                            android:id="@+id/scannedImage"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_below="@id/textheading"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/pluto" />
+
+                        <TextView
+                            android:id="@+id/textdesc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/textheading"
+                            android:layout_margin="10dp"
+                            android:layout_toEndOf="@id/scannedImage"
+                            android:text="To view all the recently scanned documents, go to the scan gallery." />
+
+                        <Button
+                            android:id="@+id/test1"
+                            android:layout_width="130dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/textdesc1"
+                            android:layout_margin="10dp"
+                            android:layout_toEndOf="@id/scannedImage"
+                            android:background="#1e2a3a"
+                            android:text="Scan Gallery"
+                            android:textColor="#fff" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/custom5"
+                        android:elevation="7dp">
+
+                        <TextView
+                            android:id="@+id/sadu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Quick Access"
+                            android:textColor="#000" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sadu"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/ll1"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:layout_below="@id/sadu"
+                                android:layout_margin="5dp"
+                                android:onClick="openCamera"
+                                android:background="@drawable/custom61">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/pablo"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#fff"
+                                    android:text="ID CARD"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll2"
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_below="@id/sadu"
+                                android:layout_margin="5dp"
+                                android:layout_toRightOf="@id/ll1"
+
+                                android:background="@drawable/custom61">
+
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/pdf1"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#fff"
+                                    android:text="Create PDF"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll3"
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:layout_below="@id/sadu"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical"
+                                android:layout_toRightOf="@id/ll2"
+                                android:background="@drawable/custom61">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/set"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#fff"
+                                    android:text="SETTINGS"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="80dp"
+                                android:layout_below="@id/sadu"
+                                android:layout_margin="5dp"
+                                android:id="@+id/ll4"
+                                android:orientation="vertical"
+                                android:layout_toRightOf="@id/ll3"
+                                android:background="@drawable/custom61">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/prada"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#fff"
+                                    android:text="SHARE"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/icon2"
+                        android:layout_below="@id/text2"
+                        android:id="@+id/icon"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:elevation="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="40dp"
+                        android:text="IndScan\nA DevelX Initiative\nDevelX Inc."/>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:layout_width="57dp"
+                android:layout_height="105dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="23dp"
+                android:background="@drawable/gc3" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="32dp"
+                android:backgroundTint="#fff"
+                android:clickable="true"
+                android:onClick="openGallery"
+                android:src="@drawable/gc2"
+                app:fabSize="mini"
+                app:rippleColor="#2c618c" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="77dp"
+                android:backgroundTint="#fff"
+                android:clickable="true"
+                android:onClick="openCamera"
+                android:src="@drawable/gc1"
+                app:fabSize="mini"
+                app:rippleColor="#2c618c" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

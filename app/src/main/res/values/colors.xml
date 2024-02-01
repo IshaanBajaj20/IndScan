@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e2a3a</color>
+    <color name="colorPrimaryDark">#1e2a3a</color>
+    <color name="colorAccent">#ffc736</color>
+
+    <color name="dark_one">#dcdcdc</color>
+    <color name="dark_two">#dcdcdc</color>
+    <color name="dark_three">#dcdcdc</color>
+    <color name="color1">#fed8b1</color>
+    <color name="color2">#b8e2f2</color>
+    <color name="color3">#d3d3d3</color>
+    <color name="color4">#e9bffd</color>
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="orange_one">#ffc736</color>
+    <color name="orange_two">#ffc736</color>
+    <color name="orange_three">#ffc736</color>
+
+    <array name="active">
+        <item>@color/orange_one</item>
+        <item>@color/orange_two</item>
+        <item>@color/orange_three</item>
+    </array>
+
+    <array name="inactive">
+        <item>@color/dark_one</item>
+        <item>@color/dark_two</item>
+        <item>@color/dark_three</item>
+    </array>
+</resources>

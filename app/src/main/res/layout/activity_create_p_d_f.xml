@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createPDF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/custom5"
+        android:layout_margin="8dp"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/reverse" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IndScan"
+            android:textColor="#2c618c"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/title1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create PDF from text"
+            android:textColor="#9ab0cb"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_below="@+id/title1"
+            android:layout_centerHorizontal="true"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/focu5"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:layout_marginRight="8dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/custom5"
+        android:elevation="5dp"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your own PDF from then text you input below. Input text in the field below and directly create a PDF. Use IndScan to create professional PDFs within minutes and share them without the hassle of converting documents. "
+            android:layout_margin="20dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textEt"
+        android:hint="Enter text..."
+        android:minHeight="200dp"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/custom5"
+        android:elevation="5dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveBtn"
+        android:text="Save as PDF"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:background="#2c618c"
+        android:elevation="3dp"/>
+
+
+
+
+</LinearLayout>

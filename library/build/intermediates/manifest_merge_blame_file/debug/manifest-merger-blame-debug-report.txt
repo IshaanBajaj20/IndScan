@@ -1,0 +1,69 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.scanlibrary"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml
+10
+11    <uses-feature
+11-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:5:5-7:35
+12        android:name="android.hardware.camera"
+12-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:6:9-47
+13        android:required="true" />
+13-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:7:9-32
+14
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:9:5-65
+15-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:9:22-62
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:10:5-80
+16-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:10:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:11:5-81
+17-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:11:22-78
+18
+19    <application
+19-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:13:5-32:19
+20        android:allowBackup="true"
+20-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:14:9-35
+21        android:hardwareAccelerated="true"
+21-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:15:9-43
+22        android:label="@string/app_name"
+22-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:16:9-41
+23        android:largeHeap="true" >
+23-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:17:9-33
+24        <activity
+24-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:18:9-21:20
+25            android:name="com.scanlibrary.ScanActivity"
+25-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:18:19-47
+26            android:configChanges="orientation|screenSize"
+26-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:19:13-59
+27            android:label="@string/app_name" >
+27-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:20:13-45
+28        </activity>
+29
+30        <provider
+30-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:23:9-31:20
+31            android:name="com.scanlibrary.CustomFileProvider"
+31-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:24:13-62
+32            android:authorities="${applicationId}.com.scanlibrary.provider"
+32-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:25:13-76
+33            android:exported="false"
+33-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:26:13-37
+34            android:grantUriPermissions="true" >
+34-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:27:13-47
+35            <meta-data
+35-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:28:13-30:57
+36                android:name="android.support.FILE_PROVIDER_PATHS"
+36-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:29:17-67
+37                android:resource="@xml/provider_paths" />
+37-->/Users/ishaanbajaj/AndroidStudioProjects/MyApplication/library/src/main/AndroidManifest.xml:30:17-55
+38        </provider>
+39    </application>
+40
+41</manifest>

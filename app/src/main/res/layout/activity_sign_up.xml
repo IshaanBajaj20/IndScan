@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/plane"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:lottie_fileName="signup.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use your social account to sign-in and use your smartphone for all professional scans."
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="10dp"
+            android:layout_marginTop="120dp">
+
+            <Button
+                android:id="@+id/google_signIn"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_custom1"
+                android:drawableLeft="@drawable/ronak"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:text="Sign in with Google"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IndScan does not store personal information"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

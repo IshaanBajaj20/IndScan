@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1e2a3a"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom5"
+            android:elevation="8dp">
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/reverse" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="IndScan"
+                android:textColor="#2c618c"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="User Profile"
+                android:textColor="#9ab0cb"
+                android:textSize="10sp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:padding="5dp"
+                android:src="@drawable/icon2"
+                app:civ_border_color="#fff"
+                app:civ_border_width="2dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll"
+        android:background="#1e2a3a">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom5"
+            android:layout_margin="8dp"
+            android:elevation="5dp"
+            >
+
+            <TextView
+                android:id="@+id/permissions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About indscan"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                android:textSize="10sp"
+                android:layout_below="@+id/permissions"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon2"
+                android:layout_below="@id/text2"
+                android:id="@+id/icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:elevation="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="If you enjoy using IndScan, please share a nice review. It really helps!\n\n\n\nLegal \n\nTerms of Use\n\nPrivacy Policy\n\nThird party notices\n\n\n\nCopyright ç 2020 TurnO. All Rights Reserved.\n\n\nAll logos are registered trademarks or trademarks of TurnO Inc. All other trademarks are properties of their respective owners"/>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

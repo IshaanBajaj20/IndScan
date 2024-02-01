@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Permissions"
+    android:background="#f5f5f5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/permissions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Permissions"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Continue"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:textSize="10sp"
+            android:layout_below="@+id/permissions"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon2"
+            android:layout_below="@id/text2"
+            android:id="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:elevation="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/custom"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Indscan requires certain permissions which need to be granted by the user before using the app:\n \n1. Read and Write External Storage\n\n2. Use device CAMERA\n\n Press the continue button after granting permissions to continue."
+                android:layout_margin="20dp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Set permissions"
+            android:layout_below="@+id/ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-130dp"
+            android:onClick="checkPermission"
+            android:background="@drawable/pbutton"
+            android:textColor="#fff"
+            />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="continue"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/continue_button"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button2"
+            android:textColor="#fff"
+            android:background="@drawable/pbutton"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

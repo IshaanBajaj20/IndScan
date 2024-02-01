@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#1e2939">
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_fileName="anni.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:id="@+id/anni"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anni"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="IndScan"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright of DevelX Inc."
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_below="@id/text1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp"/>
+
+
+
+</RelativeLayout>
+
+

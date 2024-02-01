@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.turno.myapplication"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation project(path: ':library')
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation project(':library')
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.zxing:core:3.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "androidx.core:core-ktx:+"
+    implementation 'com.android.support:support-annotations:+'
+    implementation 'com.github.ctodobom:OpenCV-3.1.0-Android:9e00ee4218ca0c9e60a905c9f09bf499f9dc5115'
+    implementation 'us.feras.mdv:markdownview:1.1.0'
+    implementation 'com.github.ctodobom:drag-select-recyclerview:0.3.4.ctodobom.sections'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.github.fafaldo:fab-toolbar:1.2.0'
+    implementation 'org.matomo.sdk:tracker:4.1.2'
+    implementation 'com.github.MikeOrtiz:TouchImageView:3.0.1'
+    implementation 'com.itextpdf:kernel:7.1.11'
+    implementation 'com.itextpdf:layout:7.1.11'
+    implementation 'com.itextpdf:io:7.1.11'
+    implementation "com.airbnb.android:lottie:3.4.1"
+    implementation 'gun0912.ted:tedpermission:2.2.2'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    implementation 'com.google.android.gms:play-services-vision:20.0.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.4'
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    implementation 'com.google.zxing:core:3.3.2'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+
+
+
+
+
+
+
+
+
+
+}

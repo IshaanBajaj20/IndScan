@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "34086677620",
+    "firebase_url": "https://docscan-7f8f9.firebaseio.com",
+    "project_id": "docscan-7f8f9",
+    "storage_bucket": "docscan-7f8f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34086677620:android:b7ba01528c136a57217521",
+        "android_client_info": {
+          "package_name": "com.turno.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34086677620-cool1ft2i6o5ibj6dnfck0cs3g7pevra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.turno.myapplication",
+            "certificate_hash": "2ac77fbfc53044c0f614d66273f4575c4b0c0241"
+          }
+        },
+        {
+          "client_id": "34086677620-t304ulhr7kaokaig4kgssibrk3mivdm8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2aZx7PquiuISOS18Qw7cppSRj06oQ2wk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34086677620-t304ulhr7kaokaig4kgssibrk3mivdm8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

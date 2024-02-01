@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="ScanDash"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/nav_qr"
+            android:title="QR/Barcode"
+            android:icon="@drawable/features"/>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Text Recogntion"
+            android:icon="@drawable/textrec"/>
+
+        <item
+            android:id="@+id/nav_create"
+            android:title="Create PDF"
+            android:icon="@drawable/match"/>
+
+        <item
+            android:id="@+id/nav_settings2"
+            android:title="Settings"
+            android:icon="@drawable/sara"/>
+
+        <item
+            android:id="@+id/nav_search"
+            android:title="About IndScan"
+            android:icon="@drawable/info"/>
+
+
+
+    </group>
+
+    <item android:title="Profile">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="User Profile"
+                    android:icon="@drawable/profile"/>
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Share ">
+
+        <menu>
+
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="Share"
+                    android:icon="@drawable/share"/>
+
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:title="Rate us"
+                    android:icon="@drawable/rate"/>
+
+
+            </group>
+        </menu>
+    </item>
+
+</menu>
